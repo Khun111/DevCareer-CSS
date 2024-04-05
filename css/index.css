@@ -1,0 +1,76 @@
+@import url(../styles.css);
+
+body {
+    background-color: var(--background);
+    color: var(--text-color);
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    width: 90%;
+    margin: 0 auto;
+}
+.text-accent {
+    color: var(--accent-index-text);
+    margin-top: 1rem;
+}
+a:hover {
+    color: var(--accent-index-text);
+}
+.box {
+    background-color: var(--accent-index-bg);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.grid + .grid {
+    margin-top: 2rem;
+}
+article menu {
+    margin-top: 1rem;
+}
+article menu li {
+    margin-top: 0.5rem;
+}
+::placeholder {
+    color: #333;
+}
+input, select, button, textarea {
+    width: 100%;
+    padding: 0.5rem 0;
+    border-radius: 0.5rem;
+}
+button {
+    background-color: var(--accent-index-text);
+    border: none;
+}
+.name {
+    display: inline-flex;
+}
+.name h1 {
+    width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid;
+    animation: type 1.5s steps(15, end) forwards, blink 0.8s infinite;
+}
+
+@keyframes type {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+@keyframes blink {
+    0% {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #fff;
+    }
+    100% {
+        border-color: transparent;
+    }
+}
