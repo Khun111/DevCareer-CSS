@@ -19,6 +19,7 @@ table {
     backdrop-filter: blur(51px);
     height: 35rem;
     padding: 2rem;
+    width: 100%;
 }
 table td {
     border-radius: 1rem;
